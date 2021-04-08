@@ -15,7 +15,6 @@ void ADC_Config(void)
 	ADC1->SMPR2 |= (7UL<<3);//Select sampling time as 480 cycles for channel 1
 	GPIOA->MODER |= (3UL<<2); //Configure PA1 in analog mode
 	ADC1->SQR3 |= (1<<0);//Select channel 1 in ADC (Corresponds to PA1)
-	ADC1->CR1 |= (1UL << 26);   //Enable OVR
 }
 void dma_config(void)
 {
