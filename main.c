@@ -1,7 +1,6 @@
 #include "stm32f407xx.h"
 void configureLED(void);
 void ADC_Config(void);
-void interrupt_config(void);
 void dma_config(void);
 uint8_t value[8200];
 uint32_t add=(uint32_t)value,reg,length=8000;
