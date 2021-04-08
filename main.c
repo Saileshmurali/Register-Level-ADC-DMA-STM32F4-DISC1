@@ -56,7 +56,6 @@ int main()
 	DMA2_Stream0->CR |=(1UL<<0);//Enable DMA
 	ADC1->CR2 |= (1UL<<0); // Start the ADC
 	ADC1->CR2 |= (1UL<<30);// Start the conversion
-	ADC1->SR = 0;
 	while(1)
 	{
 	}
